@@ -261,7 +261,6 @@ void display_stage(vector<string> const words) {
 	const int SPACES_BETWEEN_ROWS = 3;
 
 	// draws the stage
-	cout << "\n\n\n\n\n";
 	for(int column = 0; column < floor(words.size() / 3); column++) {
 		int spaces_used = 0; // stores the amount of spaces already printed
 
@@ -272,7 +271,6 @@ void display_stage(vector<string> const words) {
 
 		float mid_point = float((word0.size() + (MAX_LENGTH - word2.size() + 1)) / 2); // stores the mid point between word0's end and word1's begining
 
-		print_spaces(4);
 		cout << word0; // prints the first word of a column
 		print_spaces(int(floor(mid_point - (word1.size() / 2) - 1) - word0.size())); // makes enough spaces to make word1 the center of word0 and word1
 		cout << word1;
